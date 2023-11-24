@@ -37,11 +37,11 @@
                         <img src="assets/images/logo.svg" alt="" />
                     </div>
                     <div class="col pt-2">
-                        <form class="d-flex" role="search">
+                        <form class="d-flex position-relative" role="search">
                             <input
-                                class="form-control me-2"
+                                class="form-control me-2 glass"
                                 type="search"
-                                placeholder="Search"
+                                placeholder="Prova a creare: Lezioni di Laravel"
                                 aria-label="Search"
                             />
                         </form>
@@ -66,7 +66,7 @@
                                 <li class="nav-item mx-2">
                                     <a class="nav-link text-black p-2" href="#">
                                         <i
-                                            class="bi bi-question-circle-fill"
+                                            class="bi bi-three-dots-vertical"
                                         ></i>
                                     </a>
                                 </li>
@@ -105,53 +105,356 @@
         </header>
         <main>
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="bg-dark">
-                            <div class="list">
-                                <div class="list-group text-center p-4">
-                                    <a
-                                        href="#"
-                                        class="list-group-item-action text-white text-decoration-none"
-                                    >
-                                        <i
-                                            class="fa-solid fa-house p-2"
-                                            style="color: #f5f5f5"
-                                        ></i>
-                                        <span> Home </span>
-                                    </a>
-                                    <a
-                                        href="#"
-                                        class="list-group-item-action text-white text-decoration-none"
-                                    >
-                                        <i
-                                            class="fa-solid fa-chart-simple p-2"
-                                        ></i>
-                                        <span> Stats </span>
-                                    </a>
-                                    <a
-                                        href="#"
-                                        class="list-group-item-action text-white text-decoration-none"
-                                        ><i class="bi bi-reception-4 p-2"></i>
-                                        <span> Signal </span>
-                                    </a>
+                <div class="row h-100">
+                    <div class="col-1 p-0">
+                        <div class="sidebar bg-dark h-100 p-1 pt-2">
+                            <div class="list-sidebar py-2">
+                                <ul class="ms-0 ps-0 w-100">
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="my-action text-white text-decoration-none py-2 px-3"
+                                        >
+                                            <i
+                                                class="fa-solid fa-house me-2"
+                                                style="color: #f5f5f5"
+                                            ></i>
+                                            <span
+                                                class="d-none d-lg-block d-md-none fs-6"
+                                            >
+                                                Home
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="my-action text-white text-decoration-none py-2 px-3"
+                                        >
+                                            <i
+                                                class="fa-solid fa-chart-simple me-2"
+                                            ></i>
+                                            <span
+                                                class="d-none d-lg-block d-md-none"
+                                            >
+                                                Stats
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="my-action text-white text-decoration-none py-2 px-3"
+                                            ><i
+                                                class="bi bi-reception-4 me-2"
+                                            ></i>
+                                            <span
+                                                class="d-none d-lg-block d-md-none"
+                                            >
+                                                Signal
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="w-100">
+                                    <ul class="p-0 ms-0">
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="my-action text-white text-decoration-none py-2 px-3"
+                                            >
+                                                <i class="bi bi-gear-fill"></i>
+                                                <span
+                                                    class="d-none d-lg-block d-md-none fs-6"
+                                                    >Login
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-10">
+                    <div class="col-11 h-100">
                         <div class="row bg-primary">
-                            <div class="col-lg-6 col-md-4 col-sm-12">
-                                <h1>Boolean</h1>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <p>Studenti online negli ultimi 30 minuti</p>
-                                <div>
-                                    <p>125</p>
+                            <div class="col-lg-5 col-md-4 col-sm-12 pt-2">
+                                <div
+                                    class="d-flex align-items-center flex-wrap"
+                                >
+                                    <p class="text-white fs-2 me-3">Boolean</p>
+                                    <span
+                                        class="badge rounded-pill text-bg-color d-flex"
+                                        >Piano Blaze</span
+                                    >
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <span
+                                        class="badge rounded-pill text-bg-color"
+                                        >3 app</span
+                                    >
+                                    <i
+                                        class="fa-solid fa-angles-right my-plus mx-2"
+                                        style="color: #ffffff"
+                                    ></i>
+                                    <span
+                                        class="badge rounded-pill my-plus text-bg-color d-block d-lg-none d-md-block d-sm-block"
+                                        >+</span
+                                    >
+                                    <span
+                                        class="badge rounded-pill text-bg-color d-none d-lg-block d-md-none"
+                                        >Boolean mobile app</span
+                                    >
+                                    <span
+                                        class="badge rounded-pill text-bg-color mx-2 d-none d-lg-block d-md-non"
+                                        >Boolean web app</span
+                                    >
+                                    <span
+                                        class="badge rounded-pill text-bg-color d-none d-lg-block d-md-non"
+                                        >Boolean blog app</span
+                                    >
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-12">
-                                Nuovo Studente
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="text-white mt-3">
+                                    <p>
+                                        Studenti online negli ultimi 30 minuti
+                                    </p>
+                                    <div>
+                                        <p class="fs-2">125</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                <div class="d-flex text-white mt-3">
+                                    <p class="mt-2">Nuovo Studente</p>
+                                    <button
+                                        class="btn btn-primary fs-2"
+                                        type="button"
+                                        data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight"
+                                    >
+                                        <i class="bi bi-plus-square"></i>
+                                    </button>
+
+                                    <div
+                                        class="offcanvas offcanvas-end my-offcanvas"
+                                        tabindex="-1"
+                                        id="offcanvasRight"
+                                        aria-labelledby="offcanvasRightLabel"
+                                    >
+                                        <div class="offcanvas-header">
+                                            <h5
+                                                class="offcanvas-title"
+                                                id="offcanvasRightLabel"
+                                            >
+                                                Inserisci un nuovo studente
+                                            </h5>
+                                            <button
+                                                type="button"
+                                                class="btn-close"
+                                                data-bs-dismiss="offcanvas"
+                                                aria-label="Close"
+                                            ></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <form class="row g-3">
+                                                <div class="col-md-6">
+                                                    <label
+                                                        for="inputName"
+                                                        class="form-label"
+                                                        >Nome</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="inputName"
+                                                    />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label
+                                                        for="inputSurname"
+                                                        class="form-label"
+                                                        >Cognome</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="inputSurname"
+                                                    />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label
+                                                        for="inputEmail4"
+                                                        class="form-label"
+                                                        >Email</label
+                                                    >
+                                                    <div
+                                                        class="input-group flex-nowrap"
+                                                    >
+                                                        <span
+                                                            class="input-group-text"
+                                                            id="addon-wrapping"
+                                                            >@</span
+                                                        >
+                                                        <input
+                                                            type="text"
+                                                            class="form-control"
+                                                            placeholder="Username"
+                                                            aria-label="Username"
+                                                            aria-describedby="addon-wrapping"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label
+                                                        for="inputPassword4"
+                                                        class="form-label"
+                                                        >Password</label
+                                                    >
+                                                    <input
+                                                        type="password"
+                                                        class="form-control"
+                                                        id="inputPassword4"
+                                                    />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label
+                                                        for="inputEmail4"
+                                                        class="form-label"
+                                                        >Indirizzo Email</label
+                                                    >
+                                                    <div
+                                                        class="input-group flex-nowrap"
+                                                    >
+                                                        <span
+                                                            class="input-group-text"
+                                                            id="addon-wrapping"
+                                                            >@</span
+                                                        >
+                                                        <input
+                                                            type="text"
+                                                            class="form-control"
+                                                            placeholder="Username"
+                                                            aria-label="Username"
+                                                            aria-describedby="addon-wrapping"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label
+                                                        for="inputPassword4"
+                                                        class="form-label"
+                                                        >Password</label
+                                                    >
+                                                    <input
+                                                        type="password"
+                                                        class="form-control"
+                                                        id="inputPassword4"
+                                                    />
+                                                </div>
+                                                <div class="col-12">
+                                                    <label
+                                                        for="inputAddress"
+                                                        class="form-label"
+                                                        >Indirizzo</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="inputAddress"
+                                                        placeholder=""
+                                                    />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label
+                                                        for="inputCity"
+                                                        class="form-label"
+                                                        >Città</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="inputCity"
+                                                    />
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label
+                                                        for="inputState"
+                                                        class="form-label"
+                                                        >Stato</label
+                                                    >
+                                                    <select
+                                                        id="inputState"
+                                                        class="form-select"
+                                                    >
+                                                        <option selected>
+                                                            Scegli...
+                                                        </option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label
+                                                        for="inputCap"
+                                                        class="form-label"
+                                                        >CAP</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="inputCap"
+                                                    />
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="mb-3">
+                                                        <label
+                                                            for="formFile"
+                                                            class="form-label"
+                                                            >Foto</label
+                                                        >
+                                                        <input
+                                                            class="form-control"
+                                                            type="file"
+                                                            id="formFile"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            id="gridCheck"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="gridCheck"
+                                                        >
+                                                            Seleziona per
+                                                            proseguire
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button
+                                                        type="submit"
+                                                        class="btn btn-primary"
+                                                    >
+                                                        Salva
+                                                    </button>
+                                                    <button
+                                                        type="submit"
+                                                        class="btn btn-warning"
+                                                    >
+                                                        Svuota
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

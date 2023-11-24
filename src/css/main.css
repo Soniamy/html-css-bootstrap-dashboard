@@ -1,3 +1,33 @@
 :root {
-    --wrapper-width: 1400px;
+}
+.my-section {
+    height: 100%;
+}
+.my-action {
+    display: flex;
+}
+.my-action:hover {
+    background-color: lightslategrey;
+}
+ul {
+    list-style: none;
+}
+.text-bg-color {
+    background-color: #165bba;
+}
+.glass {
+    background-color: #e5e5e5;
+}
+.list-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+#offcanvasRight.offcanvas.offcanvas-end.my-offcanvas {
+    width: 48%;
+}
+.my-plus {
+    display: flex;
+    align-items: center;
 }
