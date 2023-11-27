@@ -15,9 +15,16 @@ ul {
 .text-bg-color {
     background-color: #165bba;
 }
-.glass {
+.bg-search {
     background-color: #e5e5e5;
 }
+.icon {
+    position: absolute;
+    top: 0;
+    left: -32px;
+    height: 36px;
+}
+
 .list-sidebar {
     display: flex;
     flex-direction: column;
@@ -30,4 +37,22 @@ ul {
 .my-plus {
     display: flex;
     align-items: center;
+}
+.my-style {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+.my-row {
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.my-button {
+    height: 30px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 6px;
+    color: lightslategray;
+}
+.my-width {
+    width: 50%;
 }
