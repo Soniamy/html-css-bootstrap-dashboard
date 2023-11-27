@@ -31,16 +31,23 @@
     </head>
     <body>
         <header>
-            <div class="container-fluid text-bg-light p-3">
+            <div class="container-fluid text-bg-light p-2">
                 <div
                     class="row d-flex justify-content-between align-items-center flex-wrap"
                 >
-                    <div class="col-4 col-lg-2 col-md-2 col-sm-2 pt-2">
+                    <div
+                        class="col-auto image d-none d-lg-block d-md-none d-sm-none"
+                    >
                         <img src="assets/images/logo.svg" alt="" />
                     </div>
-                    <div class="col-4 col-lg-6 col-md-6 col-sm-6 pt-2">
+                    <div
+                        class="col-auto image-mobile d-block d-lg-none d-md-block d-sm-block"
+                    >
+                        <img src="assets/images/mobile-logo.png" alt="" />
+                    </div>
+                    <div class="col pt-2">
                         <form
-                            class="d-flex align-items-center input-group flex-nowra position-relative"
+                            class="d-flex align-items-center input-group flex-nowra"
                             role="search"
                         >
                             <span
@@ -57,23 +64,23 @@
                             />
                         </form>
                     </div>
-                    <div class="col-4 col-lg-2 col-md-2 col-sm-2 d-flex pt-2">
+                    <div class="col-auto d-flex">
                         <div class="d-none d-lg-block d-md-none">
                             <ul class="nav">
-                                <li class="nav-item mx-2">
-                                    <a class="nav-link text-black p-2" href="#">
+                                <li class="nav-item">
+                                    <a class="nav-link text-black p-1" href="#">
                                         <i class="bi bi-list-ul"></i>
                                     </a>
                                 </li>
-                                <li class="nav-item mx-2">
-                                    <a class="nav-link text-black p-2" href="#">
+                                <li class="nav-item">
+                                    <a class="nav-link text-black p-1" href="#">
                                         <i
                                             class="bi bi-question-circle-fill"
                                         ></i>
                                     </a>
                                 </li>
-                                <li class="nav-item mx-2">
-                                    <a class="nav-link text-black p-2" href="#">
+                                <li class="nav-item">
+                                    <a class="nav-link text-black p-1" href="#">
                                         <i
                                             class="bi bi-three-dots-vertical"
                                         ></i>
@@ -83,7 +90,7 @@
                         </div>
                         <div class="dropdown">
                             <a
-                                class="btn p-2"
+                                class="btn"
                                 href="#"
                                 role=""
                                 data-bs-toggle="dropdown"
@@ -187,7 +194,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-11 h-100">
+                    <div class="col-11 h-100" style="overflow: scroll">
                         <div class="row bg-primary">
                             <div
                                 class="col-lg-5 col-md-4 col-sm-12 pt-2 order-2 order-lg-0 order-md-0 order-sm-2"
@@ -494,25 +501,25 @@
                                                     Nome
                                                 </th>
                                                 <th
-                                                    class="my-style d-none d-lg-table-cell d-md-table-cell d-sm-none"
+                                                    class="my-style text-center d-none d-lg-table-cell d-md-table-cell d-sm-none"
                                                     scope="col"
                                                 >
                                                     Data inizio
                                                 </th>
                                                 <th
-                                                    class="my-style d-none d-lg-table-cell d-md-table-cell d-sm-none"
+                                                    class="my-style text-center d-none d-lg-table-cell d-md-table-cell d-sm-none"
                                                     scope="col"
                                                 >
                                                     ROI
                                                 </th>
                                                 <th
-                                                    class="my-style"
+                                                    class="my-style text-center"
                                                     scope="col"
                                                 >
                                                     Stato
                                                 </th>
                                                 <th
-                                                    class="my-style"
+                                                    class="my-style text-center"
                                                     scope="col"
                                                 >
                                                     Azioni
@@ -520,12 +527,20 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+                                            <tr class="text-center">
                                                 <td class="my-row" scope="row">
-                                                    Classe 75
+                                                    <div
+                                                        class="image-avatar d-flex"
+                                                    >
+                                                        <img
+                                                            src="assets/images/class-avatar.jpg"
+                                                            alt=""
+                                                        />
+                                                        <span> Classe 75 </span>
+                                                    </div>
                                                 </td>
                                                 <td
-                                                    class="my-row d-none d-lg-table-cell d-md-table-cell d-sm-none"
+                                                    class="my-row d-lg-table-cell d-md-table-cell d-sm-none"
                                                 >
                                                     15 Feb 2021
                                                 </td>
@@ -534,8 +549,10 @@
                                                 >
                                                     20%
                                                 </td>
-                                                <td class="my-row my-bg">
-                                                    done
+                                                <td class="my-row">
+                                                    <p class="my-bg green">
+                                                        Done
+                                                    </p>
                                                 </td>
                                                 <td>
                                                     <button class="my-button">
@@ -550,9 +567,17 @@
                                                     </button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="text-center">
                                                 <td class="my-row" scope="row">
-                                                    Classe 76
+                                                    <div
+                                                        class="image-avatar d-flex"
+                                                    >
+                                                        <img
+                                                            src="assets/images/class-avatar.jpg"
+                                                            alt=""
+                                                        />
+                                                        <span> Classe 76 </span>
+                                                    </div>
                                                 </td>
                                                 <td
                                                     class="my-row d-none d-lg-table-cell d-md-table-cell d-sm-none"
@@ -564,7 +589,11 @@
                                                 >
                                                     20%
                                                 </td>
-                                                <td class="my-row">done</td>
+                                                <td class="my-row">
+                                                    <p class="my-bg green">
+                                                        Done
+                                                    </p>
+                                                </td>
                                                 <td>
                                                     <button class="my-button">
                                                         <i
@@ -578,9 +607,17 @@
                                                     </button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="text-center">
                                                 <td class="my-row" scope="row">
-                                                    Classe 77
+                                                    <div
+                                                        class="image-avatar d-flex"
+                                                    >
+                                                        <img
+                                                            src="assets/images/class-avatar.jpg"
+                                                            alt=""
+                                                        />
+                                                        <span> Classe 77 </span>
+                                                    </div>
                                                 </td>
                                                 <td class="my-row">
                                                     15 Feb 2021
@@ -593,7 +630,9 @@
                                                 <td
                                                     class="my-row d-none d-lg-block d-md-block d-sm-none"
                                                 >
-                                                    done
+                                                    <p class="my-bg yellow">
+                                                        Process
+                                                    </p>
                                                 </td>
                                                 <td>
                                                     <button class="my-button">
@@ -608,9 +647,17 @@
                                                     </button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="text-center">
                                                 <td class="my-row" scope="row">
-                                                    Classe 78
+                                                    <div
+                                                        class="image-avatar d-flex"
+                                                    >
+                                                        <img
+                                                            src="assets/images/class-avatar.jpg"
+                                                            alt=""
+                                                        />
+                                                        <span> Classe 78 </span>
+                                                    </div>
                                                 </td>
                                                 <td
                                                     class="my-row d-none d-lg-table-cell d-md-table-cell d-sm-none"
@@ -622,7 +669,11 @@
                                                 >
                                                     20%
                                                 </td>
-                                                <td class="my-row">done</td>
+                                                <td class="my-row">
+                                                    <p class="my-bg green">
+                                                        Done
+                                                    </p>
+                                                </td>
                                                 <td>
                                                     <button class="my-button">
                                                         <i
@@ -636,9 +687,17 @@
                                                     </button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="text-center">
                                                 <td class="my-row" scope="row">
-                                                    Classe 79
+                                                    <div
+                                                        class="image-avatar d-flex"
+                                                    >
+                                                        <img
+                                                            src="assets/images/class-avatar.jpg"
+                                                            alt=""
+                                                        />
+                                                        <span> Classe 79 </span>
+                                                    </div>
                                                 </td>
                                                 <td
                                                     class="my-row d-none d-lg-table-cell d-md-table-cell d-sm-none"
@@ -650,7 +709,11 @@
                                                 >
                                                     20%
                                                 </td>
-                                                <td class="my-row">done</td>
+                                                <td class="my-row">
+                                                    <p class="my-bg red">
+                                                        Falled
+                                                    </p>
+                                                </td>
                                                 <td>
                                                     <button class="my-button">
                                                         <i
@@ -664,9 +727,17 @@
                                                     </button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="text-center">
                                                 <td class="my-row" scope="row">
-                                                    Classe 80
+                                                    <div
+                                                        class="image-avatar d-flex"
+                                                    >
+                                                        <img
+                                                            src="assets/images/class-avatar.jpg"
+                                                            alt=""
+                                                        />
+                                                        <span> Classe 80 </span>
+                                                    </div>
                                                 </td>
                                                 <td
                                                     class="my-row d-none d-lg-table-cell d-md-table-cell d-sm-none"
@@ -678,7 +749,11 @@
                                                 >
                                                     20%
                                                 </td>
-                                                <td class="my-row">done</td>
+                                                <td class="my-row">
+                                                    <p class="my-bg green">
+                                                        Done
+                                                    </p>
+                                                </td>
                                                 <td>
                                                     <button class="my-button">
                                                         <i
@@ -692,9 +767,17 @@
                                                     </button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="text-center">
                                                 <td class="my-row" scope="row">
-                                                    Classe 81
+                                                    <div
+                                                        class="image-avatar d-flex"
+                                                    >
+                                                        <img
+                                                            src="assets/images/class-avatar.jpg"
+                                                            alt=""
+                                                        />
+                                                        <span> Classe 81 </span>
+                                                    </div>
                                                 </td>
                                                 <td
                                                     class="my-row d-none d-lg-table-cell d-md-table-cell d-sm-none"
@@ -706,7 +789,11 @@
                                                 >
                                                     20%
                                                 </td>
-                                                <td class="my-row">done</td>
+                                                <td class="my-row">
+                                                    <p class="my-bg red">
+                                                        Falled
+                                                    </p>
+                                                </td>
                                                 <td>
                                                     <button class="my-button">
                                                         <i
@@ -720,9 +807,17 @@
                                                     </button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="text-center">
                                                 <td class="my-row" scope="row">
-                                                    Classe 82
+                                                    <div
+                                                        class="image-avatar d-flex"
+                                                    >
+                                                        <img
+                                                            src="assets/images/class-avatar.jpg"
+                                                            alt=""
+                                                        />
+                                                        <span> Classe 82 </span>
+                                                    </div>
                                                 </td>
                                                 <td
                                                     class="my-row d-none d-lg-table-cell d-md-table-celld-sm-none"
@@ -734,7 +829,11 @@
                                                 >
                                                     20%
                                                 </td>
-                                                <td class="my-row">done</td>
+                                                <td class="my-row">
+                                                    <p class="my-bg green">
+                                                        Done
+                                                    </p>
+                                                </td>
                                                 <td>
                                                     <button class="my-button">
                                                         <i
@@ -778,28 +877,8 @@
                                                 data-bs-parent="#accordionExample"
                                             >
                                                 <div class="accordion-body">
-                                                    <strong
-                                                        >This is the first
-                                                        item's accordion
-                                                        body.</strong
-                                                    >
-                                                    It is shown by default,
-                                                    until the collapse plugin
-                                                    adds the appropriate classes
-                                                    that we use to style each
-                                                    element. These classes
-                                                    control the overall
-                                                    appearance, as well as the
-                                                    showing and hiding via CSS
-                                                    transitions. You can modify
-                                                    any of this with custom CSS
-                                                    or overriding our default
-                                                    variables. It's also worth
-                                                    noting that just about any
-                                                    HTML can go within the
-                                                    <code>.accordion-body</code
-                                                    >, though the transition
-                                                    does limit overflow.
+                                                    Clicca sul + in alto nella
+                                                    sezione blu
                                                 </div>
                                             </div>
                                         </div>
@@ -824,28 +903,8 @@
                                                 data-bs-parent="#accordionExample"
                                             >
                                                 <div class="accordion-body">
-                                                    <strong
-                                                        >This is the second
-                                                        item's accordion
-                                                        body.</strong
-                                                    >
-                                                    It is hidden by default,
-                                                    until the collapse plugin
-                                                    adds the appropriate classes
-                                                    that we use to style each
-                                                    element. These classes
-                                                    control the overall
-                                                    appearance, as well as the
-                                                    showing and hiding via CSS
-                                                    transitions. You can modify
-                                                    any of this with custom CSS
-                                                    or overriding our default
-                                                    variables. It's also worth
-                                                    noting that just about any
-                                                    HTML can go within the
-                                                    <code>.accordion-body</code
-                                                    >, though the transition
-                                                    does limit overflow.
+                                                    Clicca sull'icona della
+                                                    campanella
                                                 </div>
                                             </div>
                                         </div>
@@ -869,28 +928,7 @@
                                                 data-bs-parent="#accordionExample"
                                             >
                                                 <div class="accordion-body">
-                                                    <strong
-                                                        >This is the third
-                                                        item's accordion
-                                                        body.</strong
-                                                    >
-                                                    It is hidden by default,
-                                                    until the collapse plugin
-                                                    adds the appropriate classes
-                                                    that we use to style each
-                                                    element. These classes
-                                                    control the overall
-                                                    appearance, as well as the
-                                                    showing and hiding via CSS
-                                                    transitions. You can modify
-                                                    any of this with custom CSS
-                                                    or overriding our default
-                                                    variables. It's also worth
-                                                    noting that just about any
-                                                    HTML can go within the
-                                                    <code>.accordion-body</code
-                                                    >, though the transition
-                                                    does limit overflow.
+                                                    Si, si può usare da mobile
                                                 </div>
                                             </div>
                                         </div>
